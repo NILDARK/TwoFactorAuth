@@ -1,2 +1,5 @@
-# TwoFactorAuth
- Desktop Application in Python demonstrating Two Factor Authentication using email verification, login and sign up.
+# Two Factor Authentication Demo Using Desktop Application
+ Desktop Application in Python demonstrating Two Factor Authentication using email verification, login and sign up. Password is encrypted using sha256 hashing technique, and other details are encrypted using base64 encoding. As this is just demonstration, it has no more functionality, but there is scope to add it in future.
+ - The main working principle is fresh user will register first and verifies his email and get into database. Next whenever, user will request login, it will check its trusted_device list whether the request is from the machine in trusted_devices, if yes, two factor will bypass and user will loged in. 
+ - But if it is first login from particular device, user need to go through two factor authentication and the system prompts if user wants to add this particular device in his trusted_devices. 
+ - In a nutshell, request from trusted devices will go through two factor authentication, and others will bypass it. 
